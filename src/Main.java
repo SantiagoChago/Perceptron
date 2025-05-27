@@ -12,9 +12,9 @@ public class Main {
         entrenarYMostrarResultados(new Percep (3, 0.3), "AND 3 Entradas", entradas3, salidasAND3);
         entrenarYMostrarResultados(new Percep (3, 0.3), "OR 3 Entradas", entradas3, salidasOR3);
     }
-    private static void entrenarYMostrarResultados(Percep perceptron, String titulo, int[][] entradas, int[] salidas) {
+    private static void entrenarYMostrarResultados(Percep perceptron, String Encabezado, int[][] entradas, int[] salidas) {
         perceptron.entrenar(entradas, salidas, 100);
-        System.out.println("\n "+titulo +" ");
+        System.out.println("\n "+Encabezado +" ");
        DateTraining.DatEntrada(entradas);
        DateTraining.imprimirPesos(perceptron);
         DateTraining.Ecuaciones(perceptron);
